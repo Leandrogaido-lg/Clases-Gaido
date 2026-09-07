@@ -1,0 +1,27 @@
+/*
+Sintaxis 
+*/
+
+/* regla de estilo (rule) */        
+
+/*
+selector
+{
+    propiedad1: valor; 
+    propiedad2: valor;
+}
+*/
+
+/* selectores de TIPO  (nombre de la etiqueta)*/
+
+body
+{
+  background-color: brown;  
+}
+
+header
+{
+    background-color: beige;
+}
+
+ 
