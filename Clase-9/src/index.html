@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas</title>
+    <link rel="stylesheet" href="Recursos/estilos/index.css">
+    <!-- <style>
+        
+    body
+    {
+    background-color: brown;  
+    }
+
+    header
+    {
+        background-color: beige;
+    }
+        </style> -->
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <a href="" aria-label="Ir al inicio">
+            <link rel="stylesheet" href="Recursos/estilos/index.css">
+
+            <img src="./recursos/imagenes/huella.png" alt="logo huella">
+        </a>
+        <nav>
+            <a href="./index.html">
+                inicio
+            </a>
+            <a href="catalogo.html">
+                Catalogo 
+            </a>
+            <a href="./contacto.html">
+                contacto
+            </a>
+        </nav>
+
+    </header>
+    <main class="contenido-princiapl">
+        <h1>Contacto</h1>
+        <form action="./contacto.html " method="post">
+            <!-- 
+            nombre
+            telefono
+            tamaño
+            edad
+            comentarios / sobre la mascota
+            -->
+            <label for="id-nombre">Nombre</label>
+            <input type="text" name="nombre" id="id-nombre">
+            <label for="id-telefono">Telefono</label>
+            <input type="tel" name="telefono" id="id-telefono">
+            <label for="id-tamaño-mascota">Tamaño de mascota</label>
+            <select name="tamaño-mascota" id="id-tamaño-mascota">
+                <option value="C">Chico</option>
+                <option value="M">Mediano</option>
+                <option value="G">Grande</option>
+            </select>
+            <label for="id-edad">Edad</label>
+            <input type="number" name="edad" id="id-edad">
+
+            <label for="id-comentario">Comentario sobre la mascota</label>
+            <textarea name="comentario" id="id-comentario"></textarea>
+
+            <!-- -- -->
+             <button type="reset">
+                Limpiar
+             </button>
+             <input type="submit">
+             <button>
+                Enviar
+             </button>
+
+        </form>
+    </main>
+    <footer class="pie-principal">
+        <ul id="contactos">
+            <li>
+                <a href="https://Instagram.com/huellitas" target="_blank">    
+                        @huellitas
+                </a>
+
+            </li>
+            <li>
+                Direccion: Blvd. San Juan 200, X5022 Córdoba
+            </li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
