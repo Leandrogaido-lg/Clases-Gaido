@@ -30,3 +30,5 @@ pn add five-server
 pn install 
 
 -configurar scripts -> "dev":"five-server"
+
+-pn dev desde el comandpromt
