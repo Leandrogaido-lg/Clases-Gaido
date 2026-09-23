@@ -1,0 +1,154 @@
+/*
+Sintaxis 
+*/
+
+/* regla de estilo (rule) */
+
+/*
+selector
+{
+    propiedad1: valor; 
+    propiedad2: valor;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*IMPORATAR FUNTE*/
+@font-face {
+  font-family: Poppins;
+  src: url(./fuentes/Poppins-ExtraBold.ttf);
+}
+
+
+/*SELECTOR UNIVERSAL*/
+
+/* outline: 1px coral; */
+
+
+/* selectores de TIPO  (nombre de la etiqueta)*/
+html,
+body {
+  margin: 0;
+
+}
+
+html {
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  /*valor que afecta a todos los textos, y se toma como referencia*/
+}
+
+body {
+  background-color: #fffb00ec;
+}
+
+header {
+  background-color: #D4AF37;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* selector de clase */
+
+/* .vinculos
+{
+  color: #000000;
+} */
+
+
+.vinculos a {
+  color: #000000;
+}
+
+.encabezado-principal {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(74, 77, 240);
+  padding: 5px;
+}
+
+.encabezado-principal a img {
+  width: 50px;
+}
+
+.encabezado-principal nav {
+    display: block;
+}
+.encabezado-principal .boton-menu {
+    display: none;
+}
+.contenido-principal {
+  background-color: rgb(255, 252, 52);
+  /* position: relative; */
+  height: 1500px;
+}
+
+.contenido-principal .parrafo {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 1;
+  font-size: 0.9rem;
+  /*rem relativo a la raiz html */
+  background-color: blueviolet;
+  width: 200px;
+}
+
+/*Contenido Princiapl*/
+.contenido-principal img {
+  width: 50px;
+}
+
+.contenido-principal .contenedor-form {
+  padding: 50px;
+}
+
+.contenido-principal .contenedor-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*PIE PRINCIPAL*/
+.pie-principal {
+  padding: 2px 1%;
+  background-color: rgb(74, 77, 240)
+}
+
+.pie-principal li.mensajeria {
+  list-style: none;
+  position: fixed;
+  /*toma como referncia al viewport */
+  bottom: 20px;
+  right: 20px;
+}
+
+@media(width > 640px) and (width < 1200px ){
+  body {
+        background-color: #ff9100ec;
+  }
+
+  .contenido-principal{
+    background-color: purple;
+  }
+
+}
+
+/*ATRIBUTO*/
+/*[href]{}*/
+
+/* #contactos 
+{
+
+}*/
