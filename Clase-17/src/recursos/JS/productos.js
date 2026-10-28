@@ -69,4 +69,23 @@ const productosMascotas = [
         talles: ["S", "M", "L"],
         precio: 8.50
     }
+
+   
 ];
+
+ const categorias = [
+    'Ropa'
+ ]
+ let unaVariable = 'hola' //si se exporta es solo de lectura
+
+ // dos maneras de exportar
+ 
+ // 1 exportacion no nombrada -> solo puede haber una sola
+ export default productosMascotas
+
+
+ // 2 exportacion nombrada -> las necesarias 
+ export{
+    productosMascotas,
+    categorias
+ }
